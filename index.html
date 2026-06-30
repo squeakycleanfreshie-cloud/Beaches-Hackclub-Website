@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaches Hack Club</title>
+    <style>
+        @font-face {
+            font-family: 'Coolvetica';
+            src: url(Coolvetica\ Rg.otf) format('opentype');
+        }
+
+        .hero {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/58f9c2fbd2b85759c7e4ec2f/1510829737121-5DNAI5ZOJHPT9XVVCLAW/mfsprout_20170627_30.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sky: #CAF0F8;
+            --black: #000000;
+            --blue: #00AADC;
+            --gold: #F5A623;
+            --red: #E63030;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Coolvetica', sans-serif;
+            background-color: var(--sky);
+            color: var(--black);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 72px;
+            color: var(--black);
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 48px;
+            line-height: 1.3;
+        }
+
+        p {
+            line-height: 2;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 24px;
+        }
+
+        .join-btn {
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--white);
+            background-color: var(--gold);
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        .join-btn:hover {
+            background-color: var(--blue);
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 60px;
+            text-align: left;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            margin-bottom: 16px;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 70%;
+            border-radius: 16px;
+            margin-left: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Beaches Hack Club</h1>
+        <h2>A free teen STEM club on the Northern Beaches</h2>
+        <a href="https://hack.club/join/WVLXZM" class="join-btn" target="_blank">Join Us!</a>
+    </section>
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Beaches Hack Club is a free teen coding club on Sydney's Northern Beaches. We run workshops, hackathons, and build real projects together — no experience needed.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://avatars.githubusercontent.com/u/5633654?s=280&v=4" alt="members at a meeting.">
+        </div>
+    </section>
+    
+</body>
+</html>
