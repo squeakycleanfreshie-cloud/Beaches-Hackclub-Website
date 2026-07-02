@@ -204,6 +204,61 @@
             line-height: 1.6;
         }
 
+        .footer {
+            background-color: var(--black);
+            padding: 48px;
+            color: var(--white);
+}
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .footer-logo {
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .footer-links a {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--blue);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .footer-bottom a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
@@ -266,5 +321,20 @@
             </div>
         </div>
     </section>      
+    <footer class="footer">
+    <div class="footer-top">
+        <img src="Blackbg.png" alt="Beaches Hack Club logo" class="footer-logo">
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>A proud member of <a href="https://hackclub.com" target="_blank">Hack Club</p>
+        <p>© 2025 Beaches Hack Club. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
