@@ -77,6 +77,69 @@
             padding: 12px 24px;
             border-radius: 50px;
         }
+
+        .projects-header {
+            padding: 60px 48px 20px;
+            text-align: center;
+        }
+
+        .projects-header h1 {
+            font-size: 56px;
+            margin-bottom: 16px;
+        }
+
+        .projects-header p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .workshops {
+            display: flex;
+            gap: 32px;
+            padding: 48px;
+            justify-content: center;
+        }
+
+        .workshop-card {
+            width: 340px;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--black);
+            background: var(--white);
+            box-shadow: 0 4px 16px rgba(0,0,0, 0.8);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .workshop-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba (0, 0, 0, 0.15);
+        }
+
+        .workshop-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .workshop-card-text {
+            padding: 24px;
+        }
+
+        .workshop-card-text h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .workshop-card-text p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .workship
     </style>
 </head>
 <body>
@@ -92,6 +155,19 @@
         </ul>
         <a href="https://hack.club/join/WVLXZM" class="get-involved-btn" target="_blank">Join Now!</a>
     </nav>
-
+    <section class="projects-header">
+        <h1>Projects</h1>
+        <p>Workshops we have run, and stuff we have built</p>
+    </section>
+    <div class="workshops">
+        <a href="bakebuild.html" class="workshop-card">
+            <img src="bakebuild.png" alt="bakebuild workshop">
+            <div class="workshop-card-text">
+                <h2>Bakebuild</h2>
+                <p>Design a cookie cutter in CAD, get cookies, and your cookie cutters 3D printed and shipped to you</p>
+                <span class="workshop-tag">Workshop</span>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
