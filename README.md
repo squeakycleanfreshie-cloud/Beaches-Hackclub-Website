@@ -26,3 +26,6 @@ This website features:
 # My Inspiration
 I really wanted a website for my hackclub, so that more members can join, so instead of relying on someone else to do it for me, I finally stopped procrastinating and did it myself.
 
+# Demo
+
+https://beaches-hackclub-website.vercel.app/index.html
