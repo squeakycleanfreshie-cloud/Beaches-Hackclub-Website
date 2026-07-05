@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <title>BakeBuild - Beaches Hack Club</title>
+    <style>
+        @font-face {
+            font-family: 'Coolvetica';
+            src: url(Coolvetica\ Rg.otf) format('opentype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sky: #CCF8FF;
+            --black: #000000;
+            --blue: #00AADC;
+            --gold: #F5A623;
+            --red: #E63030;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Coolvetica', sans-serif;
+            background-color: var(--sky);
+            color: var(--black);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 48px;
+            background-color: var(--sky);
+        }
+
+        .logo-img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        .nav-links a.active {
+            color: var(--blue);
+            border-bottom: 2px solid var(--blue);
+            padding-bottom: 4px;
+        }
+
+        .get-involved-btn {
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            color: var(--white);
+            background-color: var(--blue);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+        }
+
+        .blog-hero {
+            padding: 60px 48px 40px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .blog-tag {
+            display: inline-block;
+            background-color: var(--blue);
+            color: var(--white);
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .blog-hero h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .blog-hero .blog-date {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 32px;
+        }
+
+        .blog-hero img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            max-height: 420px;
+        }
+
+        .blog-body {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px;
+        }
+
+        .blog-body p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        .gallery {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 48px 48px;
+        }
+
+        .gallery h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 16px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 30px 80px;
+        }
+
+        .attendants {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 48px 80px;
+        }
+
+        .attendants h2 {
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+
+        .attendants-list {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .attendant {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: var(--white);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: var(--black);
+        }
+
+
+        .footer {
+            background-color: var(--black);
+            padding: 48px;
+            color: var(--white);
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .footer-logo {
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .footer-links a {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--blue);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .footer-bottom a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+            </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="Asset 1.png" alt="Beaches Hack Club logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+        <a href="https://hack.club/join/WVLXZM" class="get-involved-btn" target="_blank">Join Now!</a>
+    </nav>
+    <div class="blog-hero">
+        <span class="blog-tag">Workshop</span>
+        <h1>Bakebuild</h1>
+        <p class="blog-date">Fri 3 Jul, 2026</p>
+        <img src="bakeimg1.jpeg" alt="Bakebuild Participants eating cookies!">
+    </div>
+    <div class="blog-body">
+        <p>So today after school, everybody met at manly library. We promptly got started on creating our cookie cutters. Because it was our first session, I explained to everyone about the basics of hack club - how it works, about YSWS programs ect. Then I lead the session, explaining to everyone how to make the cookie cutters. First everybody designed them on paper, scetching multiple illerations of what we wanted, then we used onshape, utilizing the extrude and spline tool mainly to complete them. Once everyone had finished creating at least one cutter we submited them online, packed up and walked over to butterboy, a local cookie company that create hot, delicious fudgy cookies. Ben got a cinnamon bun like myself, Quinn got a apple crumble and Druhv got a kinder Bueno cookie, We all sat and ate our cookies while I handed out the certificates. This was a very fun session.</p>
+    </div>
+    <div class="gallery">
+        <h2>Photo Book</h2>
+        <div class="gallery-grid">
+            <img src="bakeimg2.jpeg" alt="a silly photo">
+            <img src="bakeimg3.jpeg" alt="a silly photo">
+            <img src="bakeimg4.jpeg" alt="a silly photo">
+            <img src="bakeimg5.jpeg" alt="a silly photo">
+        </div>
+    </div>
+    <div class="attendants">
+        <h2>Attendants</h2>
+        <div class="attendants-list">
+            <span class="attendant">Remy</span>
+            <span class="attendant">Quinn</span>
+            <span class="attendant">Dhruv</span>
+            <span class="attendant">Camryn</span>
+            <span class="attendant">Ben</span>
+            <span class="attendant">Matisse</span>
+        </div>
+        </div>
+            <footer class="footer">
+            <div class="footer-top">
+                <img src="Blackbg.png" alt="Beaches Hack Club logo" class="footer-logo">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>A proud member of <a href="https://hackclub.com" target="_blank">Hack Club</a></p>
+                <p>© 2026 Beaches Hack Club. All rights reserved.</p>
+            </div>
+        </footer>
+
+</body>
+</html>
