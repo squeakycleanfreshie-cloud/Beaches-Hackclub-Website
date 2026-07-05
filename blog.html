@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" sizes="any">
-    <title>Blog - Beaches Hack Club</title>
+    <title>Beaches Hack Club</title>
     <style>
         @font-face {
             font-family: 'Coolvetica';
@@ -18,7 +18,7 @@
         }
 
         :root {
-            --sky: #CCF8FF;
+            --sky: #CCF8FF;;
             --black: #000000;
             --blue: #00AADC;
             --gold: #F5A623;
@@ -26,11 +26,14 @@
             --white: #ffffff;
         }
 
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
         body {
             font-family: 'Coolvetica', sans-serif;
             background-color: var(--sky);
             color: var(--black);
-            text-align: center;
         }
 
         .navbar {
@@ -39,7 +42,6 @@
             justify-content: space-between;
             padding: 16px 48px;
             background-color: var(--sky);
-            text-align: left;
         }
 
         .logo-img {
@@ -76,24 +78,77 @@
             border-radius: 50px;
         }
 
-        .blog-page {
-            padding: 100px 20px;
+        .projects-header {
+            padding: 60px 48px 20px;
+            text-align: center;
         }
 
-        .blog-page img {
-            width: 200px;
-            margin-bottom: 32px;
-        }
-
-        .blog-page h1 {
+        .projects-header h1 {
             font-size: 56px;
             margin-bottom: 16px;
         }
 
-        .blog-page p {
+        .projects-header p {
             font-family: Helvetica, Arial, sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             color: #444;
+        }
+
+        .workshops {
+            display: flex;
+            gap: 32px;
+            padding: 48px;
+            justify-content: center;
+        }
+
+        .workshop-card {
+            width: 340px;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--black);
+            background: var(--white);
+            box-shadow: 0 4px 16px rgba(0,0,0, 0.8);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .workshop-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba (0, 0, 0, 0.15);
+        }
+
+        .workshop-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .workshop-card-text {
+            padding: 24px;
+        }
+
+        .workshop-card-text h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .workshop-card-text p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .workshop-tag {
+            display: inline-block;
+            margin-top: 16px;
+            background-color: var(--sky);
+            color: var(--blue);
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -105,16 +160,24 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
         <a href="https://hack.club/join/WVLXZM" class="get-involved-btn" target="_blank">Join Now!</a>
     </nav>
-
-    <section class="blog-page">
-        <img src="https://gifsec.com/wp-content/uploads/2022/12/under-construction-gif-17.gif" alt="Under construction">
+    <section class="projects-header">
         <h1>Blog</h1>
-        <p>Coming soon — check back later!</p>
+        <p>Explore our meetings, and the stories we have to tell</p>
     </section>
+    <div class="workshops">
+        <a href="bakeblog.html" class="workshop-card">
+            <img src="cookies.jpeg" alt="bakebuild workshop">
+            <div class="workshop-card-text">
+                <h2>Bakebuild Workshop</h2>
+                <p>Today we designed a cookie cutter in CAD, then we got cookies</p>
+                <span class="workshop-tag">Workshop</span>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
